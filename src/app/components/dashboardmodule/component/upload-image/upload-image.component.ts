@@ -13,7 +13,7 @@ export class UploadImageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('formControlName', this.url)
+    //console.log('formControlName', this.url)
   }
 
   detectFiles(event) {

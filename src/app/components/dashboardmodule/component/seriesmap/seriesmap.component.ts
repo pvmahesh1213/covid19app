@@ -83,7 +83,7 @@ export class SeriesmapComponent implements OnInit {
         );
       });
       if (this.seriesChartInstance) {
-        console.log('this.chartData', this.chartData);
+       // console.log('this.chartData', this.chartData);
         this.seriesChartInstance.series[0].update({
           data: this.chartData
         }, true)

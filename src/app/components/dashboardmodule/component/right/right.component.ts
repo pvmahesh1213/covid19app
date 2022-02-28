@@ -33,7 +33,7 @@ export class RightComponent implements OnInit {
   }
 
   onChange(value) {
-    console.log(value);
+   // console.log(value);
     if (this.status.place != value) {
       this.status.place = value;
       this.shareDataService.sendData(this.status);
