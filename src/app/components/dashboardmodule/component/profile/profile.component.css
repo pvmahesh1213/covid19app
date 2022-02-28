@@ -1,0 +1,12 @@
+.example-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  div.secondcol mat-form-field{
+    display: block;
+  }

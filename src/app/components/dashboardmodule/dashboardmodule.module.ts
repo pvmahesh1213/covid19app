@@ -15,6 +15,8 @@ import { CardsComponent } from './component/cards/cards.component';
 import { TableComponent } from './component/table/table.component';
 import { TransformnumberPipe } from '../pipes/transformnumber.pipe';
 import { RighttopcontainerComponent } from './component/righttopcontainer/righttopcontainer.component';
+import { UploadImageComponent } from './component/upload-image/upload-image.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -29,11 +31,13 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [MainComponent, LeftComponent, RightComponent, SidebarComponent, HomeComponent, ProfileComponent, IndiamapComponent, SeriesmapComponent, CardsComponent, TableComponent, TransformnumberPipe, RighttopcontainerComponent],
+  declarations: [MainComponent, LeftComponent, RightComponent, SidebarComponent, HomeComponent, ProfileComponent, IndiamapComponent, SeriesmapComponent, CardsComponent, TableComponent, TransformnumberPipe, RighttopcontainerComponent, UploadImageComponent],
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: []
 })

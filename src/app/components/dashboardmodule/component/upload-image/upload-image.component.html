@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12">
+    <img [src]="url" class="rounded" width="180" height="180">
+  </div>
+  <div class="col-md-12">
+    <div class="fileUpload btn btn-primary">
+      <label class="upload">
+        <input name='Image' type="file" (change)="detectFiles($event)" />
+        Upload Image
+      </label>
+    </div>
+  </div>
+</div>
