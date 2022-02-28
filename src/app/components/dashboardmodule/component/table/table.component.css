@@ -1,0 +1,70 @@
+table td p{
+    margin: 0px;
+    height: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.table-striped tbody tr:nth-of-type(odd){
+    background-color:rgba(0,0,0,.05);
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    color: #6c757d;
+}
+table td, table th {
+    padding: 10px;
+}
+
+.table > thead > tr > th{
+    border: none;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    border: none;
+}
+
+.table > thead > tr > th{
+    background: rgba(108,117,125,.06274509803921569);
+    border-radius: 5px;
+} 
+
+table .is-confirmed{
+  color: #ff073a;
+}
+
+table .is-recovered{
+    color: #28a745;
+  }
+
+  table .is-deceased{
+    color: #6c757d;
+  }
+
+  table .is-tested{
+    color: rgba(32,26,162,.8666666666666667);
+  }
+
+  table .is-vaccinated{
+    color: #db5581;
+  }
+
+  table .state-name{
+    font-size: 14px;
+    font-weight: 600;
+    word-wrap: break-word;
+    vertical-align: inherit;
+  }
+
+  th.tablehead{
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+  }
+
+  tbody > tr > th, tbody > tr > td{
+cursor: pointer;
+  }

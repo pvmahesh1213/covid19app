@@ -1,0 +1,11 @@
+.timeseries-header h1{
+    color: gray;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;   
+}
+
+h1{
+    font-size: 24px !important;
+    font-weight: 900;
+}

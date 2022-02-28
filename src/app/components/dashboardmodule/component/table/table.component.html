@@ -1,0 +1,52 @@
+<div class="margintop30 table-responsive" *ngIf="tableData.length > 0">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="tablehead" scope="col">State/UT</th>
+        <th class="tablehead" scope="col">Confirmed</th>
+        <th class="tablehead" scope="col">Active</th>
+        <th class="tablehead" scope="col">Recovered</th>
+        <th class="tablehead" scope="col">Deceased</th>
+        <th class="tablehead" scope="col">Tested</th>
+        <th class="tablehead" scope="col">Vaccine Doses Administered</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of tableData" (mouseover)="highlightRow(data)"
+        [ngClass]="{'tableselect': data.state === status.place}">
+        <th class="state-name" scope="row">{{data.state | titlecase}}</th>
+        <td>
+          <p class="is-confirmed"><span *ngIf="data.confirmedDelta">↑{{data.confirmedDelta |
+              transformnumber:"delta"}}</span>
+          </p>
+          <p>{{data.confirmed | transformnumber}}</p>
+        </td>
+        <td>
+          <p></p>
+          <p>{{data.active | transformnumber}}</p>
+        </td>
+        <td>
+          <p class="is-recovered"><span *ngIf="data.recoveredDelta">↑{{data.recoveredDelta |
+              transformnumber:"delta"}}</span>
+          </p>
+          <p>{{data.recovered | transformnumber}}</p>
+        </td>
+        <td>
+          <p class="is-deceased"><span *ngIf="data.deceasedDelta">↑{{data.deceasedDelta |
+              transformnumber:"delta"}}</span></p>
+          <p>{{data.deceased | transformnumber}}</p>
+        </td>
+        <td>
+          <p class="is-tested"><span *ngIf="data.testedDelta">↑{{data.testedDelta | transformnumber:"delta"}}</span></p>
+          <p>{{data.tested | transformnumber}}</p>
+        </td>
+        <td>
+          <p class="is-vaccinated"><span
+              *ngIf="data.vaccaine_dose_administeredDelta">↑{{data.vaccaine_dose_administeredDelta |
+              transformnumber:"delta"}}</span></p>
+          <p>{{data.vaccaine_dose_administered | transformnumber}}</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

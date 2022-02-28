@@ -1,0 +1,54 @@
+.MapSwitcher .clickable, .MapSwitcher .highlight{
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25rem;
+    z-index: 10;
+    text-align: center;
+}
+
+.MapSwitcher .clickable.confirmed{
+    transition: 0.15s ease-in-out !important;
+}
+.MapSwitcher .clickable.active{
+    transition:  0.15s ease-in-out !important;
+}
+.MapSwitcher .clickable.recovered{
+    transition:  0.15s ease-in-out !important;
+}
+.MapSwitcher .clickable.deceased{
+    transition: 0.15s ease-in-out !important;
+}
+
+.MapSwitcher .title{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.MapSwitcher .subtitle{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.margintop15{
+    margin-top: 15px;
+}
+
+.confirmed:hover{
+   background-color: rgba(255,7,58,.12549019607843137) !important;
+   transition:  0.15s ease-in-out !important;
+}
+
+.active:hover{
+    background-color: rgba(0,123,255,.12549019607843137) !important;
+    transition: 0.15s ease-in-out !important;
+}
+
+.recovered:hover{
+    transition: 0.15s ease-in-out !important;
+    background-color: rgba(40,167,69,.12549019607843137) !important;
+}
+
+.deceased:hover{
+    transition: rgba(108,117,125,.06274509803921569) 0.15s ease-in-out !important;
+    background-color: rgba(108,117,125,.06274509803921569) !important;
+}

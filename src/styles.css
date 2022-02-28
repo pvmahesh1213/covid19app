@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+*{
+    margin: 0px;
+}
+
+.margintop50px{
+    margin-top: 50px;
+}
+
+.active{
+    background-color: #fff;
+    color: #000;
+}
+
+.login-bg {
+    background: url(../src/assets/images/loginbg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vH;
+}
+
+.div-center {
+    width: 400px;
+    height: 230px;
+    background-color: #fff;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 1em 2em;
+    display: table;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 10px -10px #000000;
+   -moz-box-shadow: 0 10px 10px -10px #000000;
+        box-shadow: 0 10px 10px -10px #000000;
+}
+
+.maxwidth100{
+    max-width:100%
+}
+
+.div-center-black {
+    width: 400px;
+    height: 250px;
+    background-color: transparent;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 1em 2em;
+    display: table;
+    color: #000;
+}
+
+.signin .mat-form-field-underline, .signin .mat-form-field-underline:focus {
+    background: none;
+    outline: 0px;
+    border-bottom: 1px solid #000 !important;
+    border: none;
+    border-radius: 0px;
+    color: #000 !important;
+    box-shadow: none !important;
+}
+
+.signin .mat-input-element{
+    color: #000;
+}
+
+.loginhheader{
+    margin: auto;
+    width: 400px;
+    padding: 1em 2em;
+    text-align: center;
+    background: #fff;
+}
+
+.align_center{
+    text-align: center;
+}
+
+.color_white{
+    color: #fff;
+}
+
+.div-center.signup{
+    height: 385px;
+}
+
+.color_black{
+    color: #000;
+}
+
+.dashboardmain{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.margintop80{
+    margin-top: 80px;
+}
+
+.margintop30{
+    margin-top: 30px;
+}
+
+div.mapcolor{
+    height: 690px;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.tableselect{
+    background-color: #54585c !important;
+    color: #fff;
+}
+
+.tableselect span{
+    color: #fff;
+}

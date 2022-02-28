@@ -1,0 +1,21 @@
+<div class="container-fluid login-bg">
+  <div class="margintop50px"></div>
+  <div class="text-center maxwidth100">
+    <img src="../../../assets/images/brand.png" class="maxwidth100" width="400" />
+  </div>
+  <h2 class="loginhheader color_black maxwidth100">SIGN IN</h2>
+  <form class="example-container div-center signin margintop50px" [formGroup]="signin" (submit)="signinSubmit()">
+    <mat-form-field>
+      <input matInput placeholder="Email" type="email" formControlName="email">
+      <mat-error *ngIf="signin.get('email').hasError('required')">Email Field Is Required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Password" type="password" formControlName="password">
+      <mat-error *ngIf="signin.get('password').hasError('required')">Password Field Is Required</mat-error>
+    </mat-form-field>
+    <div class="align_center">
+      <button type="submit" mat-raised-button color="accent"> SIGN IN</button>
+    </div>
+  </form>
+</div>

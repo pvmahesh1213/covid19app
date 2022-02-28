@@ -1,0 +1,48 @@
+.navbar-middle {
+    font-size: 0.6rem;
+    order: 1;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    width: 80px;
+    word-wrap: break-word;
+    color: gray;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .navbar-middle .a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .navbar-middle .span{
+      color: #4c75f2;
+  }
+
+  .navbar-middle p{
+      margin: 0px !important;
+  }
+
+  .navbar-middle .covid{
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .navbar-middle .india{
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    color: #4c75f2;
+    font-size: 8px;
+  }
+
+  .sidenav-item{
+      margin-top: 10px;
+  }
+
+  .menuactive{
+    color:#4c75f2
+}

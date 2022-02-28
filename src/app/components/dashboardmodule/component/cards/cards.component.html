@@ -1,0 +1,14 @@
+<div class="MapSwitcher row">
+  <div class="clickable is-confirmed col-md-3" *ngFor="let card of cards" [ngClass]="card.status"
+    [ngStyle]="card.status == status.status?{'background-color': card.bgcolor} : {'background-color': '#fff'}" (click)="changeStatus(card.status)">
+    <div class="margintop30">
+      <p class="title" [ngStyle]="{'color': card.textcolor}">{{card.title}}</p>
+    </div>
+    <div class="margintop15">
+      <p class="subtitle1" [ngStyle]="{'color': card.textcolor}">{{casesDelta(card.status)}}</p>
+    </div>
+    <div class="margintop30">
+      <p class="subtitle" [ngStyle]="{'color': card.textcolor}">{{casesCount(card.status)}}</p>
+    </div>
+  </div>
+</div>

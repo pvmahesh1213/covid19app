@@ -1,0 +1,22 @@
+<div>
+  <div>
+    <app-righttopcontainer [mapdata]="normalData" [status]="status" [states]="indiaStates"></app-righttopcontainer>
+  </div>
+  <div>
+    <app-indiamap [mapdata]="normalData" [status]="status" [states]="indiaStates"></app-indiamap>
+  </div>
+  <div class="timeseries-header margintop30">
+    <h1 class="textcenter"><b>Spread Trends </b></h1>
+    <div class="form-group">
+      <label for="sel1"></label>
+      <select class="form-control" id="sel1" (change)="onChange($event.target.value)">
+        <option *ngFor="let states of indiaStatesValues" [value]="states" [selected]="states == status.place">
+          {{states | titlecase}}
+        </option>
+      </select>
+    </div>
+    <div *ngFor="let cards of cardData">
+      <app-seriesmap [cards]="cards" [timeSeries]="timeSeriesData"></app-seriesmap>
+    </div>
+  </div>
+</div>

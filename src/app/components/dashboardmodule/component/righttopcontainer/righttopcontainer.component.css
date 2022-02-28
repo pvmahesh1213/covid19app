@@ -1,0 +1,111 @@
+h1 {
+    font-size: 24px !important;
+    font-weight: 900;
+  }
+
+  .StateDropdown {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  h5 {
+    color: gray;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  .header-right {
+    color: rgba(32,26,162,.6);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .StateHeader .header-right h2, .StateHeader .header-right h5{
+    font-weight: 600;
+    margin: 0;
+  }
+  .StateHeader .header-right{
+      color: rgba(32,26,162,.6);
+      text-align: right;
+  }
+
+  .StateHeader .header-right h2{
+    color: rgba(32,26,162,.6);
+    font-weight: 900;
+  }
+
+  .StateHeader .header-right a{
+    background: rgba(32,26,162,.12549019607843137);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 18px !important;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 12px !important;
+    font-weight: 900;
+  }
+
+  .colorlight-blue{
+      color: rgba(32,26,162,.6);
+  }
+
+  .StateHeader .header-left h5{
+    color: gray;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  .disttrict{
+    line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .MapExplorer .panel-right .switch-statistic, .MapExplorer .panel .panel-right .switch-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 0.25rem;
+  }
+
+  .MapExplorer .panel-right .switch-statistic .toggle, .MapExplorer .panel .panel-right .switch-type .toggle{
+    align-items: center;
+    background: rgb(184, 174, 174);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: 2.5rem;
+    justify-content: center;
+    margin-left: 0.25rem;
+    user-select: none;
+    width: 2.5rem;
+  }
+  
+  .is-confirmed > svg{
+    color: #ff073a;
+  }
+  
+  .is-recovered > svg{
+      color: #28a745;
+    }
+  
+    .is-deceased > svg{
+      color: #6c757d;
+    }
+  
+    .is-tested > svg{
+      color: rgba(32,26,162,.8666666666666667);
+    }
+  
+    .is-vaccinated > svg{
+      color: #db5581;
+    }

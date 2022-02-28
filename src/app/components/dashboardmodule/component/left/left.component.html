@@ -1,0 +1,39 @@
+<div>
+  <div>
+    <div class="header">
+      <div class="form-group has-feedback has-search search" style="text-align: center;">
+        <label class="fadeInUp" style="animation-delay: 0ms;">Search your district or state</label>
+        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <div class="ActionsPanel">
+        <div class="actions" style="opacity: 1; transform: perspective(600px) rotateX(0deg);">
+          <h5 class="fadeInUp" style="animation-delay: 500ms;">01 Nov, 11:22 AM IST</h5>
+          <div class="bell-icon fadeInUp" style="animation-delay: 750ms;"><svg aria-hidden="true" role="img"
+              class="octicon octicon-bell" viewBox="0 0 16 16" width="15" height="15" fill="currentColor"
+              style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+              <path
+                d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z">
+              </path>
+              <path fill-rule="evenodd"
+                d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z">
+              </path>
+            </svg>
+            <div class="indicator"></div>
+          </div>
+          <div>
+            <div class="timeline-icon fadeInUp" style="animation-delay: 1000ms;"><svg aria-hidden="true" role="img"
+                class="octicon octicon-history" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"
+                style="display: inline-block; user-select: none; vertical-align: text-bottom; overflow: visible;">
+                <path fill-rule="evenodd"
+                  d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z">
+                </path>
+              </svg></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-cards [mapdata]="normalData" [status]="status" [states]="indiaStates"></app-cards>
+  <app-table [mapdata]="normalData" [status]="status" [states]="indiaStates"></app-table>
+</div>
