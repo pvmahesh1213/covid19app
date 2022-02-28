@@ -1,3 +1,53 @@
-<p>
-  profile works!
-</p>
+<div>
+  <mat-card>
+    <div class="row">
+      <div class="col-md-8">
+        <form class="example-container" [formGroup]="profileForm" (submit)="updateProfile()">
+          <div class="form-group col-md-3 align_center">
+            <app-upload-image [url]="profileForm.value.profileImage" (getuploadimages)="imageupload($event)">
+            </app-upload-image>
+          </div>
+          <div class="form-group secondcol col-md-5">
+            <mat-form-field>
+              <input matInput placeholder="First Name" type="text" formControlName="firstname">
+              <mat-error *ngIf="profileForm.get('firstname').hasError('required')">First Name Field Is Required
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Last Name" type="text" formControlName="lastname">
+              <mat-error *ngIf="profileForm.get('lastname').hasError('required')">Last Name Field Is Required
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Email" type="email" formControlName="email" readonly>
+              <mat-error *ngIf="profileForm.get('email').hasError('required')">Email Field Is Required</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Role" type="text" formControlName="role" readonly>
+              <mat-error *ngIf="profileForm.get('role').hasError('required')">Role Field Is Required</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Phone Number" type="text" formControlName="phonenumber">
+              <mat-error *ngIf="profileForm.get('phonenumber').hasError('required')">Phone Number Field Is Required
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Gender</mat-label>
+              <mat-select formControlName="gender">
+                <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                  {{gender.viewValue}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="profileForm.get('gender').hasError('required')">Gender Field Is Required
+              </mat-error>
+            </mat-form-field>
+            <div class="align_center">
+              <button type="submit" mat-raised-button color="accent">Update Profile</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </mat-card>
+</div>
